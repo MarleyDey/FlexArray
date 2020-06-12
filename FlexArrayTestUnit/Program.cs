@@ -29,12 +29,6 @@ namespace FlexArrayTestUnit
             var testArray = new int[10];
             testArray.Fill(5);
             PrintArray(testArray);
-
-            testArray.Fill("Test");
-            PrintArray(testArray);
-
-            testArray.Fill(2.5);
-            PrintArray(testArray);
         }
 
         /**
@@ -54,11 +48,11 @@ namespace FlexArrayTestUnit
             PrintArray(testArray);
 
             var testArray2 = new int[] { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4};
-            testArray2.Replace("check", "test");
-            PrintArray(testArray);
-
             testArray2.Replace(4, 6);
-            PrintArray(testArray);
+            PrintArray(testArray2);
+
+            testArray2.Replace(4, 7);
+            PrintArray(testArray2);
         }
 
         /**
@@ -78,11 +72,9 @@ namespace FlexArrayTestUnit
             PrintArray(testArray);
 
             var testArray2 = new int[] { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4};
-            testArray2.Replace("check", "test");
-            PrintArray(testArray);
 
             testArray2.ReplaceAll(4, 6);
-            PrintArray(testArray);
+            PrintArray(testArray2);
         }
 
         /**
